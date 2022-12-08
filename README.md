@@ -38,6 +38,6 @@ color picker output result for unity &amp; odin (out put as GUIColor &amp; Color
 - 创建Trigger/HotKey 输出自己要用的Key 选择需要参数
 - ![5](Img5.jpg)
 - 第二个节点选择Action/Run Script 粘贴脚本
-- ![6](Img5.jpg)
+- ![6](Img6.jpg)
 - 快乐的使用起来
 
