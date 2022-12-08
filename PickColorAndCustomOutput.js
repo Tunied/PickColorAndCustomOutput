@@ -10,19 +10,22 @@ function run(outputType) {
 	var g = (color[1]).toFixed(2);
 	var b = (color[2]).toFixed(2);
 
-	var colorStr = "Error";
+	var colorStr = `DefaultPR (${r}f,${g}f,${b}f);`
 
-	if(outputType=="odin")
+	var type=""+outputType;
+	type = type.toLowerCase();
+	console.log("Type is: "+type);
+
+
+	if(type==="odin")
 	{
 		colorStr = `GUIColor(${r}f,${g}f,${b}f)`
-	}else if(outputType=="unity")
+	}
+	else if(type==="unity")
 	{
 		colorStr = `new Color(${r}f,${g}f,${b}f);`
-	}else{
-		colorStr = `GUIColor(${r}f,${g}f,${b}f)\nnew Color(${r}f,${g}f,${b}f)`
 	}
-
-	console.log("Type is: "+outputType)
+	
 
 	app.setTheClipboardTo(colorStr)
 	return colorStr;
